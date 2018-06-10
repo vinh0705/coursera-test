@@ -10,7 +10,7 @@ function LunchCheckController ($scope,
   $scope.name = "Yaakov";
   $scope.result ="test";                    
   $scope.check = function () {
-    result="clicked";
+    $scope.result="clicked";
   };
 }
 
