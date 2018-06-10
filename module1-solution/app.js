@@ -1,10 +1,10 @@
 (function () {
 'use strict';
 
-angular.module('DIApp', [])
-.controller('DIController', DIController);
+angular.module('LunchCheck', [])
+.controller('LunchCheckController', LunchCheckController);
 
-function DIController ($scope,
+function LunchCheckController ($scope,
                        $filter,
                        $injector) {
   $scope.name = "Yaakov";
@@ -14,13 +14,13 @@ function DIController ($scope,
     $scope.name = upCase($scope.name);
   };
 
-  console.log($injector.annotate(DIController));
+  console.log($injector.annotate(LunchCheckController));
 }
 
 function AnnonateMe(name, job, blah) {
   return "Blah!";
 }
 
-console.log(DIController.toString());
+console.log(LunchCheckController.toString());
 
 })();
