@@ -11,10 +11,10 @@ function LunchCheckController ($scope,
   //$scope.result =;                    
   $scope.check = function () {
     if($scope.name) {
-      $scope.result = "Please enter data first";
+      $scope.result = "Something Entered";
     }
     else {
-      $scope.result = "Something Entered";
+      $scope.result = "Please enter data first";
     }
   };
 }
