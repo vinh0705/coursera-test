@@ -14,7 +14,7 @@ function LunchCheckController ($scope) {
       if(splitString.length <= 3)
         $scope.result = "Enjoy!";
       else
-        $scope.result = "Too Much";
+        $scope.result = "Too Much!";
     }
     else {
       $scope.result = "Please enter data first";
