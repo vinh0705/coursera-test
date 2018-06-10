@@ -13,14 +13,6 @@ function LunchCheckController ($scope,
     var upCase = $filter('uppercase');
     $scope.name = upCase($scope.name);
   };
-
-  console.log($injector.annotate(LunchCheckController));
 }
-
-function AnnonateMe(name, job, blah) {
-  return "Blah!";
-}
-
-console.log(LunchCheckController.toString());
 
 })();
