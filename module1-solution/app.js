@@ -9,9 +9,8 @@ function LunchCheckController ($scope,
                        $injector) {
   $scope.name = "Yaakov";
   $scope.result ="test";                    
-  $scope.upper = function () {
-    var upCase = $filter('uppercase');
-    $scope.name = upCase($scope.name);
+  $scope.check = function () {
+    result="clicked";
   };
 }
 
