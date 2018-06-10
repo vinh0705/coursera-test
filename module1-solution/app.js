@@ -11,7 +11,12 @@ function LunchCheckController ($scope,
   //$scope.result =;                    
   $scope.check = function () {
     if($scope.name) {
-      $scope.result = "Something Entered";
+      var comma = ',';
+      var splitString = $scope.name.split(comma);
+      if(splitString.length <= 3)
+        $scope.result = "Enjoy!";
+      else
+        $scope.result = "Too Much";
     }
     else {
       $scope.result = "Please enter data first";
