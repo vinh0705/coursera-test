@@ -7,10 +7,15 @@ angular.module('LunchCheck', [])
 function LunchCheckController ($scope,
                        $filter,
                        $injector) {
-  $scope.name = "Yaakov";
-  $scope.result ="test";                    
+  //$scope.name = "Yaakov";
+  //$scope.result =;                    
   $scope.check = function () {
-    $scope.result="clicked";
+    if($scope.name) {
+      $scope.result = "Please enter data first";
+    }
+    else {
+      $scope.result = "Something Entered";
+    }
   };
 }
 
