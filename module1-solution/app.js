@@ -4,11 +4,9 @@
 angular.module('LunchCheck', [])
 .controller('LunchCheckController', LunchCheckController);
 
-function LunchCheckController ($scope,
-                       $filter,
-                       $injector) {
-  //$scope.name = "Yaakov";
-  //$scope.result =;                    
+LunchCheckController.$inject = ['$scope'];
+
+function LunchCheckController ($scope) {                   
   $scope.check = function () {
     if($scope.name) {
       var comma = ',';
